@@ -174,7 +174,7 @@ const products = [
 },
 {
   id: 22,
-  name: "Single Hole Hollow Block",
+  name: "Concrete Bricks",
   price: "₹15 / pcs",
   image: productImg23,
   activeImage: productImg23,
