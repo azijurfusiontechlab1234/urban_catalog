@@ -19,7 +19,7 @@ const ConcreteBricksSection = () => {
         { id: 15, name: "Arch Paver Block", price: "₹30 / pcs", image: productImg15 },
         { id: 20, name: "I-Block Brick", price: "₹18 / pcs", image: productImg20 },
         { id: 21, name: "Solid Concrete Block", price: "₹40 / pcs", image: productImg21 },
-        { id: 20, name: "Single Hole Hollow Block", price: "₹15 / pcs", image: productImg23 },
+        { id: 22, name: "Concrete Bricks", price: "₹15 / pcs", image: productImg23 },
     ];
 
     return (
