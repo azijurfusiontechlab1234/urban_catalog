@@ -1,0 +1,183 @@
+@import "tailwindcss";
+
+body {
+  font-family: "Figtree", sans-serif;
+}
+
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeUp {
+  animation: fadeUp 0.9s ease-out;
+}
+
+/* Slide up animation (text block) */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideUp {
+  animation: slideUp 0.9s ease-out forwards;
+}
+
+/* Fade in (image collage) */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* Slow pulse (badge) */
+@keyframes pulseSlow {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.06);
+  }
+}
+
+.animate-pulseSlow {
+  animation: pulseSlow 3s ease-in-out infinite;
+}
+
+
+/* Zoom animations */
+@keyframes zoomCenter {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.6);
+  }
+}
+
+@keyframes zoomRotate {
+  from {
+    transform: scale(1) rotate(0deg);
+  }
+
+  to {
+    transform: scale(1.6) rotate(2deg);
+  }
+}
+
+@keyframes zoomLift {
+  from {
+    transform: scale(1) translateY(0);
+  }
+
+  to {
+    transform: scale(1.6) translateY(-20px);
+  }
+}
+
+.zoom-center {
+  animation: zoomCenter 0.5s ease forwards;
+  z-index: 50;
+}
+
+.zoom-rotate {
+  animation: zoomRotate 0.5s ease forwards;
+  z-index: 50;
+}
+
+.zoom-lift {
+  animation: zoomLift 0.5s ease forwards;
+  z-index: 50;
+}
+
+/* Hide scrollbar but allow scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;     
+}
+
+
+
+/* ================================
+   UNIQUE HOVER ENHANCEMENTS
+================================ */
+
+/* 1️⃣ Sweep Right → Slide + Glow */
+.hvr-sweep-to-right:hover {
+  box-shadow: 0 20px 40px rgba(186, 70, 28, 0.35);
+  transform: translateY(-6px);
+  transition: all 0.4s ease;
+}
+
+/* 2️⃣ Grow → Zoom + Soft Rotate */
+.hvr-grow:hover {
+  transform: scale(1.08) rotate(1deg);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
+}
+
+/* 3️⃣ Sweep Left → Slide Left + Depth */
+.hvr-sweep-to-left:hover {
+  transform: translateX(-8px) scale(1.03);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.3);
+}
+
+/* 4️⃣ Shrink → Press Button Effect */
+.hvr-shrink:hover {
+  transform: scale(0.96);
+  box-shadow: inset 0 6px 15px rgba(0, 0, 0, 0.35);
+}
+
+/* 5️⃣ Flip Horizontal → 3D Card Flip */
+.hvr-flip-horizontal {
+  transform-style: preserve-3d;
+}
+.hvr-flip-horizontal:hover {
+  transform: rotateY(12deg) scale(1.05);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+}
+
+/* 6️⃣ Flip Vertical → Lift + Tilt */
+.hvr-flip-vertical {
+  transform-style: preserve-3d;
+}
+.hvr-flip-vertical:hover {
+  transform: rotateX(10deg) scale(1.05);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+}
+
+body {
+  overflow-x: hidden;
+}
